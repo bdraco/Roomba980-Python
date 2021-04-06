@@ -1,17 +1,20 @@
 [[package]]
 name = "amqtt"
-version = "0.10.0a1"
+version = "0.10.0a3"
 description = "MQTT client/broker using Python asyncio"
 category = "dev"
 optional = false
-python-versions = "*"
+python-versions = ">=3.6,<4.0"
 
 [package.dependencies]
-docopt = "*"
-passlib = "*"
-pyyaml = "*"
-transitions = "*"
-websockets = "*"
+docopt = ">=0.6.0,<0.7.0"
+passlib = ">=1.7.0,<2.0.0"
+PyYAML = ">=5.4.0,<6.0.0"
+transitions = ">=0.8.0,<0.9.0"
+websockets = ">=8.0,<9.0"
+
+[package.extras]
+ci = ["coveralls (>=3.0.1,<4.0.0)"]
 
 [[package]]
 name = "appdirs"
@@ -368,11 +371,12 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pyt
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.7,<4.0"
-content-hash = "fcb3f32ecacf0a1329f0ee8c58d9c7020487e4c698390e7bdcd9477b578f5ebc"
+content-hash = "1d66bee8e368fd30a68bb0cdca57fddc1f211779c9fedb8536bb76f6ed1e64e6"
 
 [metadata.files]
 amqtt = [
-    {file = "amqtt-0.10.0a1-py3-none-any.whl", hash = "sha256:dc26498de89f6c28bb4014acaa754b35953e8bf53a6efdafeb464e3e08c5815b"},
+    {file = "amqtt-0.10.0a3-py3-none-any.whl", hash = "sha256:316d884258a7bdf6024322966816a44c8432262e6d526d48e83213fc8043f856"},
+    {file = "amqtt-0.10.0a3.tar.gz", hash = "sha256:efd2ad3d1b3f046f803f4b4701bbee0043d2b97650cdedf6cbfde2cc7b0277b0"},
 ]
 appdirs = [
     {file = "appdirs-1.4.4-py2.py3-none-any.whl", hash = "sha256:a841dacd6b99318a741b166adb07e19ee71a274450e68237b4650ca1055ab128"},
